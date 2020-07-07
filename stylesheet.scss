@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixin";
+
+
+.navbar{
+  
+  position: sticky;
+  top: 0;
+  width: $max-width;
+  background: $color2;
+  color: $color1;
+
+  @include box-flexin(row,space-between,center);
+  height: 10vh;
+  z-index: 2;
+
+  h4{
+    span{
+      color: $color3;
+      font-style: italic;
+      border-bottom: 2px dotted;
+
+      font-size: 1.6em;
+      margin: 0 0 0 15px;
+    }
+  } 
+ div{
+    width: 50%;
+    height: 1cm;
+    @include box-flexin(row,space-evenly,center);
+    
+  }
+  div > button{
+    @include button-basic(2cm);
+    background: rgb(240, 240, 35);
+    &:hover{
+      background: lighten($color3, $amount: 15)
+    }
+
+  }
+}
+

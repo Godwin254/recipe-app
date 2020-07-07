@@ -1,0 +1,239 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+:root{
+  --max-width: 100%;
+  --max-height: 100vh;
+  --navbar-bgcolor: rgb(2, 2, 24);
+}
+/*navigation bar
+.navbar{
+  position: sticky;
+  top: 0;
+  width: var(--max-width);
+  background: var(--navbar-bgcolor);
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 10vh;
+  z-index: 1;
+}
+
+.navbar h4 span{
+  color: rgb(240, 240, 35);
+  font-style: italic;
+  border-bottom: 2px dotted;
+
+  font-size: 1.6em;
+  margin: 0 0 0 15px
+}
+
+.navbar div{
+  display: flex;
+  width: 50%;
+  height: 1cm;
+
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.navbar div > button{
+  width: 2cm;
+  height: 1cm;
+  font-size: 16px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 3px;
+  background: rgb(240, 240, 35)
+
+}
+
+.navbar div > button:hover{
+  background: #fff;
+}*/
+
+.navbar div > h5{
+ 
+  flex: 0.1 0 10%;
+  text-align: center;
+
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.navbar div > h5:hover{
+
+  color: rgb(240, 240, 35)
+}
+
+
+/*pop-up to add recipe*/
+.add-recipe{
+  width: 20%;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
+  z-index: 1;
+
+  position: relative;
+  left: 40%;
+  top: 11%;
+  background: rgb(248, 246, 246);
+}
+
+.add-recipe span{
+
+  width: 25px;
+  height: 25px; 
+  border: 1px solid #ccc;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  font-size: 1.5em;
+  position: relative;
+  left: 85%;
+  margin: 3px
+
+}
+
+.add-recipe form{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.add-recipe form input[type=text]{
+
+  padding: 5px;
+  margin: 5px 5px 0 5px;
+  height: 0.8cm;
+
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+  width: 95%
+}
+.add-recipe form input[type=text]:nth-child(2){
+  width: 75%
+}
+.add-recipe form div > button{
+  background:  rgb(2, 2, 24);
+  width: 25px;
+  height: 25px;
+
+  color: #fff;
+  font-size: 18px;
+  float: right;
+
+  margin: 5px 10px 0px 0;
+}
+.add-recipe form button{
+
+  width: 40%;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+
+  background: rgb(240, 240, 35);
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px 0 10px 6px
+}
+
+/**recipe list items*/
+.recipe-pane{
+
+  position: relative;
+  width: var(--max-width);
+  max-height: 20vh;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ 
+
+
+}
+
+.recipe-pane .recipe{
+
+  display: block;
+  position: relative;
+  margin: 10px 0 0 15px;
+  width: 90%;
+
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
+  cursor: pointer
+
+}
+
+.recipe-pane .recipe:hover{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+}
+
+.recipe img{
+
+  width: 100%;
+  border: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.recipe span{
+  border: 1px solid #ccc;
+  float: right;
+  padding: 5px;
+  margin: 10px 10px 5px 0;
+
+  width: 1.5cm;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 30px
+}
+.recipe h2{
+  margin-left: 5px
+}
+.recipe h5{
+  margin-left: 5px
+}
+.recipe ul{
+  margin: 5px 0 6px 10px;
+  height: 1.6cm;
+  overflow: hidden;
+}
+
+.recipe ul li{
+  margin: 5px 0 5px 20px;
+  list-style-type: circle
+}
+.recipe p{
+  padding: 3px;
+  margin: 0 4px 0 4px;
+  width: 100%;
+
+  display: inline-block;
+  height: 2cm;
+  overflow: hidden
+
+}
